@@ -44,19 +44,26 @@ body {
     overflow-x: hidden;
 }
 
-nav{
+// base.html
+
+nav {
     background-color: var(--color-black);
     color: var(--color-white);
+
     .dropdown-menu {
         background-color: var(--color-grey-5);
+
         li {
             .dropdown-item {
                 color: var(--color-white);
-            }:hover {
+            }
+
+            :hover {
                 background-color: var(--color-grey-4);
             }
         }
     }
+
     form {
         .search-input {
             margin-right: 1rem;
@@ -64,6 +71,7 @@ nav{
             box-shadow: var(--box-shadow-1);
             font-family: 'Courier New', Courier, monospace;
         }
+
         .search-btn {
             color: var(--color-white);
             background-color: var(--color-secondary);
@@ -83,7 +91,8 @@ nav{
     align-items: center;
     cursor: pointer;
     background-color: var(--color-grey-2);
-    box-shadow: var(--box-shadow-1); 
+    box-shadow: var(--box-shadow-1);
+
     a {
         justify-content: center;
         align-items: center;
@@ -195,5 +204,78 @@ nav{
         color: var(--color-black);
         cursor: pointer;
         outline: none;
+    }
+}
+
+
+// index.html
+
+.carousel-indicators {
+    .active {
+        background-color: var(--color-secondary);
+    }
+
+    .carousel-indicator {
+        background-color: var(--color-grey-1);
+    }
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carousel-inner {
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        .carousel-item {
+            text-align: center;
+            box-shadow: var(--box-shadow-1);
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.sport-card {
+    .sport-card-item {
+        .card {
+            background-color: var(--color-grey-3);
+            border: 1px solid var(--color-secondary);
+            box-shadow: var(--box-shadow-1);
+
+            .card-body {
+                h5 {
+                    color: var(--color-white);
+                    font-weight: bolder;
+                }
+
+                p {
+                    color: var(--color-white);
+                }
+
+                button {
+                    background-color: var(--color-secondary);
+                    border: none;
+                    padding: 0.5rem;
+                    border-radius: 15%;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--color-white);
+                    }
+
+                    &:hover {
+                        background-color: var(--color-black);
+                    }
+                }
+            }
+        }
     }
 }

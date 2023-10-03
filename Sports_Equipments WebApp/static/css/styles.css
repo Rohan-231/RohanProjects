@@ -180,4 +180,57 @@ nav form .search-btn {
   color: var(--color-black);
   cursor: pointer;
   outline: none;
+}
+
+.carousel-indicators .active {
+  background-color: var(--color-secondary);
+}
+.carousel-indicators .carousel-indicator {
+  background-color: var(--color-grey-1);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .carousel-inner {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.carousel .carousel-inner .carousel-item {
+  text-align: center;
+  box-shadow: var(--box-shadow-1);
+}
+.carousel .carousel-inner .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+
+.sport-card .sport-card-item .card {
+  background-color: var(--color-grey-3);
+  border: 1px solid var(--color-secondary);
+  box-shadow: var(--box-shadow-1);
+}
+.sport-card .sport-card-item .card .card-body h5 {
+  color: var(--color-white);
+  font-weight: bolder;
+}
+.sport-card .sport-card-item .card .card-body p {
+  color: var(--color-white);
+}
+.sport-card .sport-card-item .card .card-body button {
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 15%;
+}
+.sport-card .sport-card-item .card .card-body button a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+.sport-card .sport-card-item .card .card-body button:hover {
+  background-color: var(--color-black);
 }/*# sourceMappingURL=styles.css.map */
