@@ -225,7 +225,6 @@ nav form .search-btn {
   background-color: var(--color-secondary);
   border: none;
   padding: 0.5rem;
-  border-radius: 15%;
 }
 .sport-card .sport-card-item .card .card-body button a {
   text-decoration: none;
@@ -233,4 +232,122 @@ nav form .search-btn {
 }
 .sport-card .sport-card-item .card .card-body button:hover {
   background-color: var(--color-black);
+}
+
+.aboutus-top {
+  background-color: var(--color-grey-3);
+}
+
+.aboutus-mid {
+  background-color: var(--color-grey-5);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.aboutus-mid i {
+  color: var(--color-secondary);
+  font-size: 8rem;
+}
+.aboutus-mid p {
+  color: var(--color-grey-3);
+}
+.aboutus-mid .mid-upper-img {
+  box-shadow: var(--box-shadow-1);
+}
+.aboutus-mid .mid-lower-img {
+  box-shadow: var(--box-shadow-1);
+}
+.aboutus-mid .btn-container {
+  display: flex;
+  align-self: flex-start;
+  margin: 2rem 0 0 0;
+  width: 50vw;
+}
+.aboutus-mid .main-btn {
+  border-radius: 30px;
+  color: var(--color-black);
+  font-weight: 600;
+  position: relative;
+  background-color: var(--color-grey-1);
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  text-decoration-line: none;
+}
+.aboutus-mid .main-btn::before {
+  content: "";
+  z-index: -1;
+  transform: translateX(100%);
+}
+.aboutus-mid .main-btn:hover {
+  background-color: var(--color-secondary);
+  transform: translateX(0);
+}
+
+.about-items-bottom .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-items-bottom .bottom .bottom-head {
+  color: var(--color-white);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.about-items-bottom .bottom .bottom-desc {
+  color: var(--color-grey-2);
+}
+.about-items-bottom .about-items .about-item {
+  padding: 1rem;
+}
+.about-items-bottom .about-items .about-item .about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-grey-4);
+  margin: 1rem 0;
+}
+.about-items-bottom .about-items .about-item .about-card img {
+  border: 1px solid var(--color-secondary);
+}
+.about-items-bottom .about-items .about-item .about-card ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  width: 60%;
+}
+.about-items-bottom .about-items .about-item .about-card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 70%;
+}
+.about-items-bottom .about-items .about-item .about-card ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  box-shadow: var(--box-shadow-1);
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+.about-items-bottom .about-items .about-item .about-card ul li a i {
+  font-size: 0.8rem;
+}
+.about-items-bottom .about-items .about-item .about-card ul li a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-black);
 }/*# sourceMappingURL=styles.css.map */
