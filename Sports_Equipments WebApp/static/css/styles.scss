@@ -288,26 +288,32 @@ nav {
 .aboutus-mid {
     background-color: var(--color-grey-5);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
     i {
         color: var(--color-secondary);
         font-size: 8rem;
     }
+
     p {
         color: var(--color-grey-3);
     }
+
     .mid-upper-img {
         box-shadow: var(--box-shadow-1);
     }
+
     .mid-lower-img {
         box-shadow: var(--box-shadow-1);
     }
+
     .btn-container {
         display: flex;
         align-self: flex-start;
         margin: 2rem 0 0 0;
         width: 50vw;
     }
-    .main-btn{
+
+    .main-btn {
         border-radius: 30px;
         color: var(--color-black);
         font-weight: 600;
@@ -321,12 +327,14 @@ nav {
         padding: 0.6rem 1rem 0.6rem 1rem;
         text-decoration-line: none;
     }
-    .main-btn::before{
+
+    .main-btn::before {
         content: '';
         z-index: -1;
         transform: translateX(100%);
     }
-    .main-btn:hover{
+
+    .main-btn:hover {
         background-color: var(--color-secondary);
         transform: translateX(0);
     }
@@ -407,6 +415,68 @@ nav {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+// contactus
+
+.contactus {
+    h2 {
+        margin: 2rem;
+    }
+    background-color: var(--color-primary);
+    .form-control {
+        border: none;
+        background-color: var(--color-primary);
+        .input-control {
+            margin: 0 6rem;
+            input {
+                padding: 1rem 1.6rem;
+                margin: 0.5rem 0;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                background-color: var(--color-grey-5);
+                color: var(--color-grey-2);
+                width: 100%;
+                font-size: 1.2rem;
+                resize: none;
+                transition: 0.3s ease-in-out;
+
+                ::-webkit-input-placeholder {
+                    color: var(--color-white);
+                }
+
+                &:hover {
+                    border: 0.5px solid var(--color-grey-3);
+                }
+            }
+        }
+        .buttons{
+            margin: 1rem 6rem;
+            input {
+                padding: 1rem 1.6rem;
+                margin: 0.5rem 0;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                background-color: var(--color-grey-5);
+                color: var(--color-grey-2);
+                width: 100%;
+                font-size: 1.2rem;
+                resize: none;
+                transition: 0.3s ease-in-out;
+                box-shadow: var(--box-shadow-1);
+                font-weight: 900;
+                &:hover{
+                    background-color: var(--color-secondary);
+                    color: var(--color-black);
+                    cursor: pointer;
+                    outline: none;
+                }               
             }
         }
     }

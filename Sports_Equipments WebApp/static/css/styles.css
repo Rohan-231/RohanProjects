@@ -350,4 +350,61 @@ nav form .search-btn {
 .about-items-bottom .about-items .about-item .about-card ul li a:hover {
   background-color: var(--color-secondary);
   color: var(--color-black);
+}
+
+.contactus {
+  background-color: var(--color-primary);
+}
+.contactus h2 {
+  margin: 2rem;
+}
+.contactus .form-control {
+  border: none;
+  background-color: var(--color-primary);
+}
+.contactus .form-control .input-control {
+  margin: 0 6rem;
+}
+.contactus .form-control .input-control input {
+  padding: 1rem 1.6rem;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: var(--color-grey-5);
+  color: var(--color-grey-2);
+  width: 100%;
+  font-size: 1.2rem;
+  resize: none;
+  transition: 0.3s ease-in-out;
+}
+.contactus .form-control .input-control input ::-webkit-input-placeholder {
+  color: var(--color-white);
+}
+.contactus .form-control .input-control input:hover {
+  border: 0.5px solid var(--color-grey-3);
+}
+.contactus .form-control .buttons {
+  margin: 1rem 6rem;
+}
+.contactus .form-control .buttons input {
+  padding: 1rem 1.6rem;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: var(--color-grey-5);
+  color: var(--color-grey-2);
+  width: 100%;
+  font-size: 1.2rem;
+  resize: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: var(--box-shadow-1);
+  font-weight: 900;
+}
+.contactus .form-control .buttons input:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+  cursor: pointer;
+  outline: none;
 }/*# sourceMappingURL=styles.css.map */
