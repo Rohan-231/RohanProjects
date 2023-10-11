@@ -24,20 +24,6 @@
   --box-shadow-1: 0 5px 15px rgba(0, 0, 0, .3);
 }
 
-.light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
-  --color-white: #454e56;
-  --color-black: #000;
-  --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
-  --color-grey-2: #6c7983;
-  --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b;
-}
-
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -49,6 +35,8 @@ body {
 nav {
   background-color: var(--color-black);
   color: var(--color-white);
+  z-index: 10;
+  top: 0;
 }
 nav .dropdown-menu {
   background-color: var(--color-grey-5);
@@ -59,40 +47,25 @@ nav .dropdown-menu li .dropdown-item {
 nav .dropdown-menu li :hover {
   background-color: var(--color-grey-4);
 }
-nav form .search-input {
-  margin-right: 1rem;
-  margin-left: 1rem;
-  box-shadow: var(--box-shadow-1);
-  font-family: "Courier New", Courier, monospace;
-}
-nav form .search-btn {
+nav div .search-btn {
   color: var(--color-white);
   background-color: var(--color-secondary);
   box-shadow: var(--box-shadow-1);
   margin: 0;
 }
 
-.logout {
-  width: 7rem;
-  height: 3rem;
-  border-radius: 10%;
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.theme-btn {
+  z-index: 10;
+  margin: 0.9rem 0.5rem 0.5rem 1rem;
+  border-radius: 50%;
   cursor: pointer;
-  background-color: var(--color-grey-2);
   box-shadow: var(--box-shadow-1);
 }
-.logout a {
-  justify-content: center;
-  align-items: center;
-  text-decoration-line: none;
-  font-size: 1.5rem;
-  color: var(--color-black);
+.theme-btn i {
+  font-size: 2rem;
 }
-.logout:hover {
-  transform: scale(1.05);
+.theme-btn i:hover {
+  color: var(--color-grey-2);
 }
 
 .footer-controls {
@@ -126,6 +99,7 @@ nav form .search-btn {
 .footer-controls .footer-controls-items .info-item i {
   display: flex;
   align-items: center;
+  color: var(--color-secondary);
 }
 .footer-controls .contact-icons .contact-icon {
   margin: 1rem 0;
@@ -236,6 +210,9 @@ nav form .search-btn {
 
 .aboutus-top {
   background-color: var(--color-grey-3);
+}
+.aboutus-top h1 {
+  color: var(--color-white);
 }
 
 .aboutus-mid {
@@ -350,6 +327,54 @@ nav form .search-btn {
 .about-items-bottom .about-items .about-item .about-card ul li a:hover {
   background-color: var(--color-secondary);
   color: var(--color-black);
+}
+
+.services p {
+  color: var(--color-grey-3);
+}
+
+.services-body {
+  background-color: var(--color-grey-4);
+}
+.services-body .services-items .card {
+  position: relative;
+  width: 95%;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.4s ease-in-out;
+  border: none;
+  background-color: inherit;
+}
+.services-body .services-items .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.8);
+  transition: 0.4s ease-in-out;
+}
+.services-body .services-items .card:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+  border-radius: 8px;
+  transition: 0.4s ease-in-out;
+}
+.services-body .services-items .card img {
+  border-radius: 8px 8px 0 0;
+}
+.services-body .services-items .card .card-body {
+  margin-top: -5px;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  border-top: 7px solid var(--color-secondary);
+  border-radius: 0 0 8px 8px;
+  background-color: var(--color-grey-5);
+}
+.services-body .services-items .card .card-body p {
+  color: var(--color-grey-3);
+}
+.services-body .services-items .card .card-body .btn-group {
+  color: var(--color-white);
+  text-transform: capitalize;
+}
+.services-body .services-items .card .card-body small {
+  color: var(--color-white);
 }
 
 .contactus {

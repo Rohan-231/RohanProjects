@@ -22,20 +22,6 @@
     --box-shadow-1: 0 5px 15px rgba(0, 0, 0, .3);
 }
 
-.light-mode {
-    --color-primary: #FFFFFF;
-    --color-secondary: #F56692;
-    --color-white: #454e56;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #f8f8f8;
-    --color-grey-6: #12181b;
-}
-
 body {
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
@@ -49,6 +35,8 @@ body {
 nav {
     background-color: var(--color-black);
     color: var(--color-white);
+    z-index: 10;
+    top: 0;
 
     .dropdown-menu {
         background-color: var(--color-grey-5);
@@ -64,14 +52,7 @@ nav {
         }
     }
 
-    form {
-        .search-input {
-            margin-right: 1rem;
-            margin-left: 1rem;
-            box-shadow: var(--box-shadow-1);
-            font-family: 'Courier New', Courier, monospace;
-        }
-
+    div {
         .search-btn {
             color: var(--color-white);
             background-color: var(--color-secondary);
@@ -81,28 +62,19 @@ nav {
     }
 }
 
-.logout {
-    width: 7rem;
-    height: 3rem;
-    border-radius: 10%;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.theme-btn {
+    z-index: 10;
+    margin: 0.9rem 0.5rem 0.5rem 1rem;
+    border-radius: 50%;
     cursor: pointer;
-    background-color: var(--color-grey-2);
     box-shadow: var(--box-shadow-1);
 
-    a {
-        justify-content: center;
-        align-items: center;
-        text-decoration-line: none;
-        font-size: 1.5rem;
-        color: var(--color-black);
-    }
+    i {
+        font-size: 2rem;
 
-    &:hover {
-        transform: scale(1.05);
+        &:hover {
+            color: var(--color-grey-2);
+        }
     }
 }
 
@@ -139,6 +111,7 @@ nav {
             i {
                 display: flex;
                 align-items: center;
+                color: var(--color-secondary);
             }
         }
     }
@@ -283,6 +256,10 @@ nav {
 
 .aboutus-top {
     background-color: var(--color-grey-3);
+
+    h1 {
+        color: var(--color-white);
+    }
 }
 
 .aboutus-mid {
@@ -421,18 +398,82 @@ nav {
 }
 
 
+// services
+.services {
+    p {
+        color: var(--color-grey-3);
+    }
+}
+
+.services-body {
+    background-color: var(--color-grey-4);
+    .services-items {
+            .card {
+            position: relative;
+            width: 95%;
+            border-radius: 5px;
+            box-shadow: var(--box-shadow-1);
+            transition: all .4s ease-in-out;
+            border: none;
+            background-color: inherit;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 1px 20px rgba(0, 0, 0, .8);
+                transition: 0.4s ease-in-out;
+
+                img {
+                    transform: scale(1.1);
+                    filter: grayscale(0);
+                    border-radius: 8px;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+
+            img {
+                border-radius: 8px 8px 0 0;
+            }
+
+            .card-body {
+                margin-top: -5px;
+                padding: 1rem 1.5rem 3rem 1.5rem;
+                border-top: 7px solid var(--color-secondary);
+                border-radius: 0 0 8px 8px;
+                background-color: var(--color-grey-5);
+
+                p {
+                    color: var(--color-grey-3);
+                }
+                
+                .btn-group {
+                    color: var(--color-white);
+                    text-transform: capitalize;
+                }
+
+                small {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+}
+
 // contactus
 
 .contactus {
     h2 {
         margin: 2rem;
     }
+
     background-color: var(--color-primary);
+
     .form-control {
         border: none;
         background-color: var(--color-primary);
+
         .input-control {
             margin: 0 6rem;
+
             input {
                 padding: 1rem 1.6rem;
                 margin: 0.5rem 0;
@@ -455,8 +496,10 @@ nav {
                 }
             }
         }
-        .buttons{
+
+        .buttons {
             margin: 1rem 6rem;
+
             input {
                 padding: 1rem 1.6rem;
                 margin: 0.5rem 0;
@@ -471,12 +514,13 @@ nav {
                 transition: 0.3s ease-in-out;
                 box-shadow: var(--box-shadow-1);
                 font-weight: 900;
-                &:hover{
+
+                &:hover {
                     background-color: var(--color-secondary);
                     color: var(--color-black);
                     cursor: pointer;
                     outline: none;
-                }               
+                }
             }
         }
     }
