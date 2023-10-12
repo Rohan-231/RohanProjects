@@ -32,6 +32,37 @@ body {
   overflow-x: hidden;
 }
 
+.login {
+  background-color: var(--color-grey-4);
+  color: var(--color-white);
+}
+.login input {
+  font-family: "Trebuchet MS", sans-serif;
+  color: var(--color-grey-6);
+  border-radius: 5px;
+}
+.login input:focus {
+  box-shadow: var(--box-shadow-1);
+  border: 1px solid var(--color-secondary);
+}
+.login button {
+  background-color: var(--color-secondary);
+  color: var(--color-grey-2);
+  width: 80%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  resize: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: var(--box-shadow-1);
+  color: var(--color-grey-5);
+}
+.login button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+  cursor: pointer;
+  outline: none;
+}
+
 nav {
   background-color: var(--color-black);
   color: var(--color-white);
